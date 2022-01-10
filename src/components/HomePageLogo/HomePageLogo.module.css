@@ -1,0 +1,9 @@
+.LogoTitle {
+  font-family: Jura;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 170px;
+  color: #ffffff;
+  text-shadow: 8px 10px 4px rgba(0, 0, 0, 0.55);
+}

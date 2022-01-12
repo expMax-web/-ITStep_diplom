@@ -1,0 +1,37 @@
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*как сделать такой шрифт у всех кто открывает сайт?  */
+
+.Content {
+  font-family: Jura;
+  font-style: normal;
+  font-size: 36px;
+  color: #ffffff;
+}
+.ReservationButton {
+  background-color: #ff6000;
+  color: black;
+  font-family: Jura;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  position: relative;
+  border: none;
+  margin-left: 30px;
+  padding: 0 45px;
+}
+
+.ReservationButton::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(to top left, #ff6000 50%, rgba(255, 0, 0, 0) 52%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}

@@ -7,3 +7,13 @@
   color: #ffffff;
   text-shadow: 8px 10px 4px rgba(0, 0, 0, 0.55);
 }
+
+.LogoImgContainer {
+  width: 800px;
+  height: 690px;
+  background: url("../../../static/HomePageLogo.png") no-repeat;
+}
+
+.LogoTitle {
+  text-align: center;
+}

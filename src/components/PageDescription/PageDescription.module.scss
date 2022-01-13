@@ -1,0 +1,20 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Title {
+  color: #ff6000;
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.Description {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  white-space: pre;
+  text-align: center;
+}

@@ -10,8 +10,6 @@ export const HomePage: FC = () => {
   return (
     <div className={styles.Wrapper}>
       <HomePageLogo />
-      <Navbar />
-      <Footer />
     </div>
   );
 };

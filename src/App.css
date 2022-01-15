@@ -1,7 +1,7 @@
 .App {
   width: 100%;
   height: max-content;
-  max-height: 1080px;
+  height: 100vh;
   background: url("../static/background.png") no-repeat;
   background-size: 100% 100%;
   padding: 120px 0 30px 0;

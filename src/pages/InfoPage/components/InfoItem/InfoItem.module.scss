@@ -1,0 +1,45 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.InfoItemContainer {
+  max-height: 605px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.InfoItemIcon {
+  width: 280px;
+  height: 500px;
+  &_Spider {
+    width: 573px;
+    height: 328px;
+  }
+}
+
+.InfoItemTitle {
+  color: white;
+  font-family: Jura;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.InfoItemDescription {
+  color: white;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}

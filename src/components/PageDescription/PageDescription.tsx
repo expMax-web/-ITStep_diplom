@@ -13,7 +13,7 @@ export const PageDescription: React.FC<PageDescriptionProps> = ({
 }) => {
   return (
     <div className={styles.Container}>
-      <h2 className={styles.Title}>{title.toUpperCase()}</h2>
+      <h2 className={styles.Title}>{title}</h2>
       <p className={styles.Description}>{description}</p>
     </div>
   );

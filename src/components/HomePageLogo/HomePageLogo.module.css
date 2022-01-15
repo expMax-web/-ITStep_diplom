@@ -9,11 +9,16 @@
 }
 
 .LogoImgContainer {
-  width: 800px;
-  height: 690px;
-  background: url("../../../static/HomePageLogo.png") no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .LogoTitle {
   text-align: center;
+}
+
+.LogoImg {
+  display: block;
+  max-width: 685px;
 }

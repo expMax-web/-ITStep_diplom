@@ -12,14 +12,19 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
+  position: relative;
 }
-.InfoItemIcon {
+.InfoItemLogo {
   width: 280px;
   height: 500px;
   &_Spider {
     width: 573px;
     height: 328px;
   }
+}
+
+.InfoItemLogo_SpiderWrapper {
+  margin-right: 35%;
 }
 
 .InfoItemTitle {
@@ -42,4 +47,53 @@
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.InfoItemButton {
+  position: absolute;
+  width: 290px;
+  height: 245px;
+  bottom: 25%;
+  background: linear-gradient(
+    156.76deg,
+    rgba(255, 255, 255, 0.47) 1.94%,
+    rgba(255, 255, 255, 0) 84.74%
+  );
+  box-shadow: 20px 12px 4px rgba(0, 0, 0, 0.44);
+  border: none;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(-15deg);
+
+  &_PS {
+    background: linear-gradient(
+      336.1deg,
+      rgba(25, 101, 248, 0.5) 20.28%,
+      rgba(126, 137, 158, 0) 98.49%
+    );
+  }
+  &_XBOX {
+    background: linear-gradient(
+      155.78deg,
+      rgba(119, 159, 155, 0) 5.78%,
+      rgba(20, 255, 198, 0.57) 80.62%
+    );
+  }
+  &_PC {
+    background: linear-gradient(
+      153.4deg,
+      rgba(255, 255, 255, 0.38) 16.04%,
+      rgba(194, 0, 78, 0.266) 75.65%
+    );
+  }
+  &_SQUAD {
+    background: linear-gradient(
+      156.76deg,
+      rgba(255, 255, 255, 0.47) 1.94%,
+      rgba(255, 255, 255, 0) 84.74%
+    );
+  }
+}
+
+.InfoItemIcon {
+  margin-top: 25%;
 }

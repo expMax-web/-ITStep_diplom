@@ -13,6 +13,7 @@ import { PricesPage } from "./pages/PricesPage/PricesPage";
 import { СontactsPage } from "./pages/СontactsPage/InfoPage";
 
 import "./App.css";
+
 //установить валидный hot (для обновления страницы в реальном времени)
 export const App: React.FC = () => {
   return (
@@ -27,6 +28,7 @@ export const App: React.FC = () => {
           <Route path="/videos" element={<VideosPage />} />
           <Route path="/prices" element={<PricesPage />} />
           <Route path="/contacts" element={<СontactsPage />} />
+          <Route path="*" element={<HomePage />} />
         </Routes>
         <Footer />
       </div>

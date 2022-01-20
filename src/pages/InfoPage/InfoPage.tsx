@@ -1,15 +1,19 @@
 import React, { FC } from "react";
 
 import {
-  PlaystationIcon,
-  XboxIcon,
+  PSLogo,
+  XboxLogo,
+  PCLogo,
+  VIPLogo,
+  PSIcon,
+  XBOXIcon,
   PCIcon,
   PCVipIcon,
 } from "./components/icons";
 
 import { PageDescription } from "../../components/PageDescription/PageDescription";
 import { InfoItem } from "./components/InfoItem/InfoItem";
-import { InfoItemType, InfoItemsArrayType } from "./types/types";
+import { InfoItemType, InfoItemsArrayType, TypeEnum } from "./types/types";
 
 import styles from "./styles.module.scss";
 
@@ -17,19 +21,31 @@ const InfoItemsArray: InfoItemsArrayType = [
   {
     title: "playstation 5",
     decription: "4 консоли",
-    img: PlaystationIcon,
+    logo: PSLogo,
     isSpider: true,
+    icon: PSIcon,
+    type: TypeEnum.PS,
   },
-  { title: "xbox series x", decription: "3 консоли", img: XboxIcon },
+  {
+    title: "xbox series x",
+    decription: "3 консоли",
+    logo: XboxLogo,
+    icon: XBOXIcon,
+    type: TypeEnum.XBOX,
+  },
   {
     title: "Общий зал",
     decription: "на 30 самураев",
-    img: PCIcon,
+    logo: PCLogo,
+    icon: PCIcon,
+    type: TypeEnum.PC,
   },
   {
     title: "4 VIP комнаты",
     decription: "для вашей команды",
-    img: PCVipIcon,
+    logo: VIPLogo,
+    icon: PCVipIcon,
+    type: TypeEnum.SQUAD,
   },
 ];
 
@@ -46,8 +62,10 @@ export const InfoPage: FC = () => {
             key={item.title}
             title={item.title}
             description={item.decription}
-            img={item.img}
+            logo={item.logo}
             isSpider={item.isSpider}
+            icon={item.icon}
+            type={item.type}
           />
         ))}
       </div>

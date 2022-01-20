@@ -31,6 +31,10 @@ export const Navbar: React.FC = () => {
       link: "/contacts",
       description: "Контакты",
     },
+    {
+      link: "/",
+      description: "домой",
+    },
   ];
 
   return (

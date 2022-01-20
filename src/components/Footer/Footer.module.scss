@@ -2,6 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  margin-top: 30px;
+  &_Animation {
+    justify-content: left;
+  }
 }
 /*как сделать такой шрифт у всех кто открывает сайт?  */
 
@@ -10,7 +18,13 @@
   font-style: normal;
   font-size: 36px;
   color: #ffffff;
+  &_Hide {
+    position: absolute;
+    left: -3000px;
+    transition: all 2s;
+  }
 }
+
 .ReservationButton {
   background-color: #ff6000;
   color: black;
@@ -34,4 +48,20 @@
   top: 0;
   left: 0;
   transform: translateX(-100%);
+}
+
+.Logo {
+  font-family: Jura;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  display: none;
+  &_Wiew {
+    display: block;
+  }
 }

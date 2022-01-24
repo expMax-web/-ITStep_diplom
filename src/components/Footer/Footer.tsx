@@ -11,12 +11,8 @@ export const Footer: React.FC = () => {
 
   console.log(location);
   return (
-    <div
-      className={cn(styles.Footer, {
-        [styles.Footer_Animation]: location.pathname !== "/",
-      })}
-    >
-      <div>
+    <div className={styles.Footer}>
+      <div className={styles.ReservationContent}>
         <p
           className={cn(styles.Content, {
             [styles.Content_Hide]: location.pathname !== "/",
@@ -33,7 +29,14 @@ export const Footer: React.FC = () => {
         </p>
         <button className={styles.ReservationButton}>Бронь</button>
       </div>
-      <img src={PhoneIcon} alt="" />
+      <div className={styles.ReservationPhoneWrapper}>
+        <img
+          className={styles.ReservationPhoneIcon}
+          src={PhoneIcon}
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
     </div>
   );
 };
